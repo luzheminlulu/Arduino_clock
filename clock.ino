@@ -230,9 +230,9 @@ void setup() {
     while (1);
   }
 
-  //if (rtc.lostPower()) {
-  //  rtc.adjust(DateTime(F(__DATE__), F(__TIME__)) + TimeSpan(0, 0, 0, 10));
-  //}
+  if (rtc.lostPower()) {
+    rtc.adjust(DateTime(F(__DATE__), F(__TIME__)) + TimeSpan(0, 0, 0, 10));
+  }
 
   prevTime = micros();
 }
