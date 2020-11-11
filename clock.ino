@@ -140,6 +140,7 @@ void digital_show(int num)
       digitalWrite(digital_e,LOW);
       digitalWrite(digital_f,LOW);
       digitalWrite(digital_g,LOW);
+      break;
     default:
       digitalWrite(digital_a,HIGH);
       digitalWrite(digital_b,LOW);
